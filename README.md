@@ -16,9 +16,9 @@ There are two gotchas.
 6. Webserver = 
 7. 
 
-#Instructions for setting up FreeTakServer on a brand new Ubuntu 20.04 server.
+# Instructions for setting up FreeTakServer on a brand new Ubuntu 20.04 server.
 
-#first we will ensure that when the freetakserver script called python3 it resolves to python3.8. I intend to use pyenv in the future or docker.
+first we will ensure that when the freetakserver script called python3 it resolves to python3.8. I intend to use pyenv in the future or docker.
 sudo apt update
 sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
 sudo apt-get install build-essential checkinstall
