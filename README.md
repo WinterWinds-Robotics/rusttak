@@ -16,3 +16,30 @@ There are two gotchas.
 6. Webserver = 
 7. 
 
+#Instructions for setting up FreeTakServer on a brand new Ubuntu 20.04 server.
+
+#first we will ensure that when the freetakserver script called python3 it resolves to python3.8. I intend to use pyenv in the future or docker.
+sudo apt update
+sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
+sudo apt-get install build-essential checkinstall
+sudo apt autoremove
+sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev
+cd /opt
+sudo wget https://www.python.org/ftp/python/3.8.10/Python-3.8.10.tgz
+sudo tar xzf Python-3.8.10.tgz
+ls -la
+sudo rm -f Python-3.8.10.tgz
+cd Python-3.8.10
+sudo ./configure --enable-optimizations
+sudo make altinstall
+python3.8 -V
+
+sudo nano ~/.bashrc
+# Add into the bottom 
+alias python3.8=python3
+
+#run install script. This script will install all sorts of components like nodered and murmur that we may not want later but I don't have any reason to exclude these components presently.
+
+wget -qO - bit.ly/ftszerotouch | sudo bash
+
+
