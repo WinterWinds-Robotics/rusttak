@@ -10,11 +10,11 @@ There are two gotchas.
 
 1. python3 must resolve to python3.8.10 via aliasing or symlinking. The install script for installing the server assumes it can do a "python3 -m pip install and it install libraries relevant to Python3.8.
 2. ports must be created in the firewall for the following services.
-3. API =
-4. SSL =
-5. TCP = 
-6. Webserver = 
-7. 
+3. API = 19023 (default)
+4. SSL = 8089 (default)
+5. TCP = 8087 (default)
+6. Webserver = 5000 (default)
+7. Federation = 9000 (default)
 
 # Instructions for ensuring that you have Python3.8 on a brand new Ubuntu 20.04 server.
 
