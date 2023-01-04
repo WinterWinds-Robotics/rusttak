@@ -16,7 +16,7 @@ There are two gotchas.
 6. Webserver = 
 7. 
 
-# Instructions for setting up FreeTakServer on a brand new Ubuntu 20.04 server.
+# Instructions for ensuring that you have Python3.8 on a brand new Ubuntu 20.04 server.
 
 first we will ensure that when the freetakserver script called python3 it resolves to python3.8. I intend to use pyenv in the future or docker.
 sudo apt update
@@ -37,7 +37,7 @@ python3.8 -V
 sudo nano ~/.bashrc
 alias python3.8=python3
 
-# run install script. 
+# run install script for FreeTakServer. 
 
 This script will install all sorts of components like nodered and murmur that we may not want later but I don't have any reason to exclude these components presently.
 
