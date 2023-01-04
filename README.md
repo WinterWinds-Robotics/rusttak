@@ -35,11 +35,13 @@ sudo make altinstall
 python3.8 -V
 
 sudo nano ~/.bashrc
-# Add into the bottom 
 alias python3.8=python3
 
-#run install script. This script will install all sorts of components like nodered and murmur that we may not want later but I don't have any reason to exclude these components presently.
+# run install script. 
+
+This script will install all sorts of components like nodered and murmur that we may not want later but I don't have any reason to exclude these components presently.
 
 wget -qO - bit.ly/ftszerotouch | sudo bash
+
 
 
